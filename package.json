@@ -1,0 +1,16 @@
+{
+  "name": "elland-tennis",
+  "version": "1.0.0",
+  "description": "Elland Tennis Club Static Website",
+  "main": "index.js",
+  "author": "Darryl Dolan-Rathmell",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "bootstrap-sass": "^3.3.7",
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1"
+  }
+}
