@@ -8,6 +8,7 @@ The scope for this project is to create a website which includes:
 - Facilities
   - Photo gallery
 - Tennis Lessons Offerings
+  - Available Coaches
 - Social Aspects
 - Location
   - Google Maps
