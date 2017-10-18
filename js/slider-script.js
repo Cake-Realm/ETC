@@ -7,7 +7,6 @@ var Page = (function() {
 	    $navDots = $( '#nav-dots' ).hide(),
 	    $navOptions = $( '#nav-options' ).hide(),
 		$shadow = $( '#shadow' ).hide(),
-		$clicked = 0,
 		slicebox = $( '#sb-slider' ).slicebox( {
 			onReady : function() {
 
@@ -17,7 +16,7 @@ var Page = (function() {
 				* however were decided to be kept in for easy switching 
 				**/
 				$navArrows.show();
-				$navOptions.show();
+				//$navOptions.show();
 				//$navDots.show();
 
 				$shadow.show();
@@ -53,30 +52,37 @@ var Page = (function() {
 
 			} );
 
-			$( '.sb-slider' ).on( {
+			// onhover pause and play functionality
+			// change to .sb-slider to reduce the pause
+			// thresh-hold
+			$( '#slider' ).on( {
+
 				mouseenter: function() {
-					
+
 					slicebox.pause();
+		
 				},
 
 				mouseleave: function() {
-					
+
 					slicebox.play();
+
 				}
+
 			} );
-			
+
 			// slideshow functionality
 			$( '#navPlay' ).on( 'click' , function() {
 
-				slicebox.play();
-				return false;
+					slicebox.play();
+					return false;
 
 			} );
 
 			$( '#navPause' ).on( 'click' , function() {
 
-				slicebox.pause();
-				return false;
+					slicebox.pause();
+					return false;
 
 			} );
 
