@@ -16,6 +16,7 @@ var Page = (function() {
 				$shadow.show();
 				//$navDots.show();
 
+				slicebox.play();
 			},
 
 			orientation : 'r',
@@ -60,7 +61,6 @@ var Page = (function() {
 				return false;
 
 			} );
-
 		};
 
 		return { init : init };
