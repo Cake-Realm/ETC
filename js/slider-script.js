@@ -4,7 +4,8 @@ $(function() {
 var Page = (function() {
 
 	var $navArrows = $( '#nav-arrows' ).hide(),
-	    $navOptions = $('#nav-options').hide(),
+	    $navDots = $( '#nav-dots' ).hide(),
+	    $navOptions = $( '#nav-options' ).hide(),
 		$shadow = $( '#shadow' ).hide(),
 		slicebox = $( '#sb-slider' ).slicebox( {
 			onReady : function() {
@@ -13,11 +14,14 @@ var Page = (function() {
 				$navArrows.show();
 				$navOptions.show();
 				$shadow.show();
+				//$navDots.show();
 
 			},
+
 			orientation : 'r',
 			cuboidsRandom : true,
 			disperseFactor : 30
+
 		} ),
 		
 		init = function() {
