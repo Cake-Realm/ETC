@@ -9,6 +9,7 @@ var Page = (function() {
 		slicebox = $( '#sb-slider' ).slicebox( {
 			onReady : function() {
 
+				// remove these lines to hide page elements
 				$navArrows.show();
 				$navOptions.show();
 				$shadow.show();
@@ -26,7 +27,7 @@ var Page = (function() {
 		},
 		initEvents = function() {
 
-			// add navigation events
+			// navigation fucntionality
 			$navArrows.children( ':first' ).on( 'click', function() {
 
 				slicebox.next();
@@ -41,6 +42,7 @@ var Page = (function() {
 
 			} );
 
+			// slideshow functionality
 			$('#navPlay').on( 'click' , function() {
 
 				slicebox.play();
@@ -52,7 +54,7 @@ var Page = (function() {
 
 				slicebox.pause();
 				return false;
-				
+
 			} );
 
 		};
