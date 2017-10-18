@@ -7,16 +7,22 @@ var Page = (function() {
 	    $navDots = $( '#nav-dots' ).hide(),
 	    $navOptions = $( '#nav-options' ).hide(),
 		$shadow = $( '#shadow' ).hide(),
+		$clicked = 0,
 		slicebox = $( '#sb-slider' ).slicebox( {
 			onReady : function() {
 
-				// remove these lines to hide page elements
+				/** 
+				* uncomment to return elements to the page
+				* these elements were used for testing purposes,
+				* however were decided to be kept in for easy switching 
+				**/
 				$navArrows.show();
 				$navOptions.show();
-				$shadow.show();
 				//$navDots.show();
 
+				$shadow.show();
 				slicebox.play();
+
 			},
 
 			orientation : 'r',
@@ -47,20 +53,33 @@ var Page = (function() {
 
 			} );
 
+			$( '.sb-slider' ).on( {
+				mouseenter: function() {
+					
+					slicebox.pause();
+				},
+
+				mouseleave: function() {
+					
+					slicebox.play();
+				}
+			} );
+			
 			// slideshow functionality
-			$('#navPlay').on( 'click' , function() {
+			$( '#navPlay' ).on( 'click' , function() {
 
 				slicebox.play();
 				return false;
 
 			} );
 
-			$('#navPause').on( 'click' , function() {
+			$( '#navPause' ).on( 'click' , function() {
 
 				slicebox.pause();
 				return false;
 
 			} );
+
 		};
 
 		return { init : init };
