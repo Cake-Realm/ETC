@@ -1,12 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <meta charset="utf-8" />
+  <meta  name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
   <!-- Stylesheet link can ge generated through a shortcut within Visual Studio Code -->
   <script src="./node_modules/jquery/dist/jquery.js"></script>
   <script src="./js/script.js"></script>
+
+  <!-- Bootstrap Imports -->
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
 </head>
 <body>
+  <section id="contact">
+      <div class="section-content">
+        <h1 class="section-header">Contact Us<span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"></span></h1>
+        <h3>Elland Tennis Club</h3>
+      </div>
+      <div class="contact-section">
+      <div class="container">
+        <form>
+          <div class="col-md-7 form-line">
+              <div class="form-group">
+                <label for="inputFirstName">Firstname:</label>
+                <input type="text" class="form-control" id="" placeholder=" Name">
+              </div>
+              <div class="form-group">
+                <label for="inputLastName">Surname:</label>
+                <input type="text" class="form-control" id="" placeholder=" Surname">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail">Email:</label>
+                <input type="email" class="form-control" id="exampleInputEmail" placeholder=" Email">
+              </div>  
+              <div class="form-group">
+                <label for="telephone">Mobile No.</label>
+                <input type="tel" class="form-control" id="telephone" placeholder=" Contact Number">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for ="description"> Message</label>
+                <textarea  class="form-control" id="description" placeholder="Enter Your Message"></textarea>
+              </div>
+              <div>
+
+                <button type="button" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
+              </div>
+              
+          </div>
+        </form>
+      </div>
+    </section>
 </body>
 </html>
