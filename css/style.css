@@ -81,6 +81,7 @@ h1 {
   transform: rotateY(320deg) translateZ(288px); }
 
 img {
+  box-shadow: 20px 20px;
   -webkit-filter: grayscale(1);
   cursor: pointer;
   transition: all .5s ease; }
